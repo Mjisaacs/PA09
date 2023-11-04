@@ -43,7 +43,7 @@ function displayMovie(movie){
 function searchMovies(event) {
     event.preventDefault()
 
-    let input = document.querySelector('[type="search]').value || ""
+    let input = document.querySelector('[type="search"]').value || ""
     let count = 0
     for(let m of movies) {
         if(m.title.toUpperCase().indexOf(input.toUpperCase()) == -1){
